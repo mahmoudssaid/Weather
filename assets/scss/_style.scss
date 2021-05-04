@@ -220,10 +220,17 @@ header {
     padding: 45px 0;
     nav {
         padding: 0 !important;
+        .navbar-toggler {
+            background: #fff;
+            img {
+                width: 35px;
+                height: 30px;
+            }
+        }
         .navbar-brand {
             @include flexCenter();
             img {
-                width: 60px;
+                width: 75px;
                 margin-#{$end-direction}: 10px;
             }
             div {
@@ -375,11 +382,13 @@ footer {
     padding: 40px 0;
     .search-div {
         @extend %search-div;
-        margin-bottom: 50px !important;
+        margin-bottom: 0px !important;
+        padding-bottom: 50px;
     }
     ul {
         @include resetUl();
         text-align: center;
+        margin-top: 12px;
         li {
             display: inline-flex;
             background: $bg-section;

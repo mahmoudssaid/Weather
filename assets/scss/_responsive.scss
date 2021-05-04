@@ -6,7 +6,15 @@
 //=============================================================
 // Large devices (desktops, less than 992px)
 //=============================================================
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .navbar-nav {
+        margin-top: 30px;
+        text-align: center;
+        li {
+            margin: 7px 0;
+        }
+    }
+}
 
 //=============================================================
 // Large devices (desktops, less than 768px)

@@ -7,7 +7,6 @@
             <button class="btn btn-primary">Find</button>
         </div>
         <div class="row items">
-          
         </div>
     </div>
 </section>

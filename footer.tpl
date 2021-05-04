@@ -8,7 +8,7 @@
                         <button class="btn btn-primary">subscribe</button>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 align-content">
                     <ul>
                         <li>
                             <a href="#">
