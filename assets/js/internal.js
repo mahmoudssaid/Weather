@@ -10,7 +10,7 @@ inSearch.setAttribute("onkeyup", "searchWeather(this.value)")
 
 function searchWeather(val) {
     (async function() {
-        let toDay = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b2e98d4f6b5c4849b98213404212904&q=${val}&days=3`);
+        let toDay = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b2e98d4f6b5c4849b98213404212904&q=${val}&days=3`);
         weatherTD = await toDay.json();
         windDir = weatherTD.current.wind_dir;
         displayToDay();
