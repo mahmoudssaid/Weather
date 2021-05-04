@@ -17,13 +17,14 @@ function searchWeather() {
         displayToDay();
     })();
 }
+setTimeout(weatherT, 4000)
 
-(async function() {
-    let toDay = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b2e98d4f6b5c4849b98213404212904&q=cairo&days=3`);
+async function weatherT() {
+    let toDay = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b2e98d4f6b5c4849b98213404212904&q=cairo&days=3`);
     weatherTD = await toDay.json();
     windDir = weatherTD.current.wind_dir;
     displayToDay();
-})();
+}
 
 function displayToDay() {
     switch (windDir) {
