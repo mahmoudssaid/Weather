@@ -7,11 +7,26 @@
 // Large devices (desktops, less than 992px)
 //=============================================================
 @include media-breakpoint-down(md) {
-    .navbar-nav {
-        margin-top: 30px;
-        text-align: center;
-        li {
-            margin: 7px 0;
+    header nav .ul-Header .active {
+        border: 2px solid transparent;
+        @include radius(0);
+        border-bottom: 1px solid #eeeeeead;
+    }
+    header nav {
+        .navbar-nav {
+            margin-top: 30px;
+            text-align: center;
+            background: #262936;
+            @include radius(20px);
+            li {
+                padding: 15px 0;
+                margin: 0;
+                border-bottom: 1px solid #eeeeeead;
+                @include radius(0);
+                &:last-of-type {
+                    border: 0;
+                }
+            }
         }
     }
 }
